@@ -2,9 +2,9 @@ import { Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
-export const NavLink = ({ text, targetId }) => {
+export const NavLink = ({ text, targetId, style, className }) => {
   return (
-    <Link href={targetId} >
+    <Link href={targetId} style={style} className={className}>
       <Text
         as="p"
         color="black"
