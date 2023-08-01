@@ -35,8 +35,28 @@ export const Banner = () => {
     <Animate variants={fadeInLeft} triggerOnce={true}>
         
         <Flex mt={8} px={0} position="relative" height={"100%"}>
-            <DynamicImage alt="" src="/banner/idul.png" mb={10} width={"100%"} />
-            
+        <Carousel
+            time={2000}
+            infiniteLoop={true}
+            showArrows={true}
+            width={"100%"}
+            dots={true}
+            showThumbs={false}
+            showStatus={false}
+            >
+                <div>
+                    <img src='/banner/idul.png'/>
+                </div>
+
+                <div>
+                    <img src='/banner/idul.png'/>
+                </div>
+
+                <div>
+                    <img src='/banner/idul.png'/>
+                </div>
+            </Carousel>
+            {/* <DynamicImage alt="" src="/banner/idul.png" mb={10} width={"100%"} /> */}
         </Flex>
         <Flex mb={12}>
         <Swiper
