@@ -7,6 +7,8 @@ import 'swiper/css';
 import { fadeInLeft } from '@/components/animation/variants';
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { DynamicImage } from '@/components/DynamicImage';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const logos = [
     {
